@@ -31,7 +31,7 @@ function startTimer() {
     var timeInterval = setInterval(function () {
         if (timeLeft > 0) {
             timer.textContent = timeLeft;
-            secondsLeft--;
+            timeLeft--;
         } else {
             timer.textContent = "Time over!";
             gameOver(timeInterval);
@@ -52,9 +52,9 @@ var currentQuestion = 0;
 
 
 function showQuestions() {
-    questionTitle.textContent = quizQuestions[currentQuestion].question;
+    questionTitle.textContent = questions[currentQuestion].questions;
   
-    var choose = quizQuestions[currentQuestion].choices;
+    var choose = questions[currentQuestion].choices;
     for (let i = 0; i < choose.length; i++) {
       var optionButton = document.createElement("button");
       optionButton.textContent = choose[i];
@@ -67,7 +67,7 @@ function showQuestions() {
 
 
   function correctAnswer(event) {
-    if (quizQuestions[currentQuestion].answer === event.target.textContent) {
+    if (Questions[currentQuestion].answer === event.target.textContent) {
       score += 5;
       choice.textContent = "Correct!";
     } else {
