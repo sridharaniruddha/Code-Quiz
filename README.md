@@ -3,6 +3,21 @@
 ## User Story
 I want to create a web application that allows users to test their coding knowledge by taking a timed quiz that provides their scores instantly.
 
+## Acceptance Criteria 
+
+I will have completed my brief once the following conditions are met
+* A start button that when clicked a timer starts and the first question appears.
+ 
+  * Questions contain buttons for each answer.
+  * 
+  * When an answer is clicked, the next question appears
+  * 
+  * If the answer clicked was incorrect then subtract time from the clock
+
+* The quiz should end when all questions are answered or the timer reaches 0.
+
+  * When the game ends, it should display the score and give the user the ability to save their initials and their score
+
 ## Table of Contents 
 - Features 
 - Screenshots 
