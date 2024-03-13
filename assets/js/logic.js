@@ -72,7 +72,7 @@ function showQuestions() {
       score += 5;
       choice.textContent = "Correct!";
     } else {
-      secondsLeft -= 10;
+      timeLeft -= 0;
       choice.textContent = "Incorrect!";
     }
     currentQuestion++;
