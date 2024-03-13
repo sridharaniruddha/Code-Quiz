@@ -68,7 +68,7 @@ function showQuestions() {
 
 
   function correctAnswer(event) {
-    if (questions[currentQuestion].answer === event.target.textContent) {
+    if (questions[currentQuestion].correctAnswer === event.target.textContent) {
       score += 5;
       choice.textContent = "Correct!";
     } else {
