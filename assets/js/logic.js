@@ -42,7 +42,7 @@ function startTimer() {
 
 function unhideQuestions() {
     starterScreen.classList.add("hide");
-    questions.classList.remove("hide");
+    questionsElement.classList.remove("hide");
 }
 
 startButton.addEventListener("click", unhideQuestions);
@@ -53,7 +53,7 @@ var currentQuestion = 0;
 
 
 function showQuestions() {
-    questionTitle.textContent = questionsElement[currentQuestion].question;
+    questionTitle.textContent = questions[currentQuestion].question;
   
     var choose = questions[currentQuestion].choices;
     for (let i = 0; i < choose.length; i++) {
@@ -68,7 +68,7 @@ function showQuestions() {
 
 
   function correctAnswer(event) {
-    if (Questions[currentQuestion].answer === event.target.textContent) {
+    if (questions[currentQuestion].answer === event.target.textContent) {
       score += 5;
       choice.textContent = "Correct!";
     } else {
@@ -88,7 +88,7 @@ function showQuestions() {
 
 
   function gameOver() {
-    questions.classList.add("hide");
+    questionsElement.classList.add("hide");
     endScreen.classList.remove("hide");
     finalScore.textContent = score
   }
