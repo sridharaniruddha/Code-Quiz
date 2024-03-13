@@ -11,7 +11,7 @@ var questions = [
     {
         question: "Which keyword is used to declare a variable in JavaScript?",
         choices: ["var", "let", "const", "variable"],
-        correctAnswer: "Var"
+        correctAnswer: "var"
     },
 
     {
