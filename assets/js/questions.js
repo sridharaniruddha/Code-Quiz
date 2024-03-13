@@ -5,7 +5,7 @@ var questions = [
     {
         question: "Commonly used data types DO NOT include:",
         choices: ["Strings", "Booleans", "Alerts", "Numbers"],
-        correctAnswer: "Booleans"
+        correctAnswer: "Alerts"
     },
 
     {
@@ -17,20 +17,20 @@ var questions = [
     {
         question: "Arrays in Javascript can be used to store:",
         choices: ["Numbers and strings", "Other Arrays", "Booleans", "All of the above"],
-        correctAnswer: "Booleans"
+        correctAnswer: "All of the above"
     },
 
     {
         question: "String values must be enclosed in ______ when being assigned to variables:",
         choices: ["Commas", "Curly Brackets", "Quotes", "Parenthesis"],
-        correctAnswer: "Curly Brackets"
+        correctAnswer: "Parenthesis"
     },
 
 
     {
         question: "A useful tool in development and debugging for printing content to the debugger is:",
         choices: ["JavaScript", "Terminal Bash ", "For Loops", "Console.log"],
-        correctAnswer: "For Loops"
+        correctAnswer: "Terminal Bash"
     },
 
     {
