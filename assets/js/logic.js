@@ -1,6 +1,6 @@
 // creating variables
 var timer = document.querySelector(".timer");
-var questions = document.querySelector("#questions");
+var questionsElement = document.querySelector("#questions");
 var questionTitle = document.querySelector("#question-title");
 var choice = document.querySelector("#choices");
 var starterScreen = document.querySelector("#start-screen");
@@ -21,6 +21,7 @@ function startQuiz() {
     // displayQuestion();
 
 }
+document.g
 
 
 
@@ -52,7 +53,7 @@ var currentQuestion = 0;
 
 
 function showQuestions() {
-    questionTitle.textContent = questions[currentQuestion].questions;
+    questionTitle.textContent = questionsElement[currentQuestion].question;
   
     var choose = questions[currentQuestion].choices;
     for (let i = 0; i < choose.length; i++) {
