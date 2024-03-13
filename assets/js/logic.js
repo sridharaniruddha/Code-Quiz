@@ -26,7 +26,7 @@ document.g
 
 
 // function for timer after start button is clicked
-var timeLeft = 30;
+var timeLeft = 60;
 
 function startTimer() {
     var timeInterval = setInterval(function () {
@@ -72,7 +72,7 @@ function showQuestions() {
       score += 5;
       choice.textContent = "Correct!";
     } else {
-      timeLeft -= 0;
+      timeLeft -= 10;
       choice.textContent = "Incorrect!";
     }
     currentQuestion++;
